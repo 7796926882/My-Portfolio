@@ -1,0 +1,407 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f6f2;
+    color: #222;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #ffffff;
+}
+
+.logo {
+    color: #19345c;
+    font-size: 28px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+/* Home */
+#home {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+    background: #e9eef6;
+}
+
+.home-content h3 {
+    font-size: 25px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    color: #19345c;
+    margin: 15px 0;
+}
+
+.home-content h2 {
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #19345c;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Other Sections */
+section:not(#home) {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #19345c;
+    margin-bottom: 25px;
+}
+
+footer {
+    background: #19345c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+
+
+/* Hamburger Menu */
+
+.menu-toggle {
+    display: none;
+    background: #19345c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Mobile Navbar */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .navbar #themeBtn {
+        margin-left: auto;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    section:not(#home) {
+        padding: 50px 6%;
+    }
+}
+
+/* Skills Cards */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-card {
+    background: white;
+    padding: 25px 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    background: #19345c;
+    color: white;
+}
+
+/* Project Cards */
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    color: #19345c;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-card .btn {
+    margin-top: 10px;
+}
+
+/* Contact Form */
+
+#contactForm {
+    max-width: 500px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#contactForm textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+#contactForm button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#successMessage {
+    color: green;
+    font-weight: bold;
+}
+
+/* Theme Button */
+
+#themeBtn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #19345c;
+    color: white;
+    cursor: pointer;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+    background: #181818;
+    color: white;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .skill-card,
+body.dark-mode .project-card {
+    background: #292929;
+    color: white;
+}
+
+body.dark-mode .navbar a {
+    color: white;
+}
+
+body.dark-mode #home {
+    background: #242424;
+}
+
+body.dark-mode section h2,
+body.dark-mode .project-card h3 {
+    color: #91b5ed;
+}
+
+body.dark-mode footer {
+    background: #111;
+}
+
+/* Resume Button */
+
+#home .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#home .btn:hover {
+    background: #31588c;
+    transition: 0.3s;
+}
+
+/* Social Links */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.social-links a {
+    text-decoration: none;
+    background: #19345c;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #31588c;
+    transform: translateY(-4px);
+}
+
+/* Profile Image */
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #19345c;
+    margin-bottom: 20px;
+}
+
+/* Project Images */
+
+.project-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Scroll Animation */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Professional Hover Effects */
+
+/* Navigation Links */
+
+.navbar a {
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #31588c;
+}
+
+/* Buttons */
+
+.btn {
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Skill Cards */
+
+.skill-card {
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+/* Project Cards */
+
+.project-card {
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Project Images */
+
+.project-img {
+    transition: 0.4s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.04);
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankita | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Ankita.</h2>
+            <button class="menu-toggle" id="menuToggle">
+    ☰
+</button>
+
+            <ul id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="themeBtn">🌙 Dark Mode</button>
+
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+
+<img src="image/Ankita.jpeg"
+     alt="My Profile Photo"
+     class="profile-img">
+
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Ankita Shriramwar</h1>
+            <h2>Frontend Web Developer</h2>
+            <p>I create beautiful and responsive websites.</p>
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="resume/Ankita-Resume.pdf"download class="btn"> Download Resume</a>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="reveal">
+        <h2>About Me</h2>
+        <p>I am a Computer Science graduate and aspiring Web Developer.</p>
+    </section>
+
+    
+<section id="skills" class="reveal">
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React</div>
+    </div>
+</section>
+
+
+<section id="projects" class="reveal">
+    <h2>My Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h3>Glow & Grace Beauty Studio</h3>
+            <img src="image/Beauty-Salon.png"
+     alt="Beauty Salon Website"
+     class="project-img">
+
+            <p>A responsive Beauty Salon Website created using HTML, CSS and JavaScript.</p>
+            <a href="#contact" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>My Portfolio Website</h3>
+            <img src="image/My-Portfolio.png"
+     alt="Portfolio Website"
+     class="project-img">
+            <p>My personal portfolio website to showcase my skills and projects.</p>
+            <a href="#contact" class="btn">View Project</a>
+        </div>
+
+    </div>
+</section>
+
+    
+<section id="contact" class="reveal">
+    <h2>Contact Me</h2>
+    <p>Have a project? Let's work together!</p>
+
+<div class="social-links">
+
+    <a href="https://github.com/"
+       target="_blank">
+       GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/"
+       target="_blank">
+       LinkedIn
+    </a>
+
+    <a href="mailto:ankitashriramwar73@gmail.com">
+       Email Me
+    </a>
+
+</div>
+
+
+    <form id="contactForm">
+
+        <input type="text" id="name"
+        placeholder="Enter Your Name" required>
+
+        <input type="email" id="email"
+        placeholder="Enter Your Email" required>
+
+        <textarea id="message"
+        placeholder="Write Your Message" required></textarea>
+
+        <button type="submit" class="btn">
+            Send Message
+        </button>
+
+        <p id="successMessage"></p>
+
+    </form>
+</section>
+
+
+    <footer>
+        <p>© 2026 Ankita. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
