@@ -405,3 +405,16 @@ body.dark-mode footer {
 .project-img:hover {
     transform: scale(1.04);
 }
+
+.project-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.project-links .btn {
+    text-decoration: none;
+    cursor: pointer;
+}

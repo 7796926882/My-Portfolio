@@ -112,5 +112,3 @@ const observer = new IntersectionObserver(function(entries) {
 revealElements.forEach(function(element) {
     observer.observe(element);
 });
-
-
